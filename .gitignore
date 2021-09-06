@@ -11,6 +11,7 @@ node_modules/
 .github/
 
 
+
 mongodb+srv://rooot:<password>@cluster0first.lhbw1.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
 
 
