@@ -9,3 +9,11 @@ __pycache__/
 *.py[cod]
 node_modules/
 .github/
+
+
+mongodb+srv://rooot:<password>@cluster0first.lhbw1.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
+
+
+python3 -m http.server
+
+python3 -m http.server
