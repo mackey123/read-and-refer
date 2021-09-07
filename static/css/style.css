@@ -1,4 +1,12 @@
+.reg{
+    color: #64b5f6;
+}
+
 
 .text-shadow{
     text-shadow:4px 4px  rgba(0,0,0,0);
+}
+
+.flashes h4{
+    line-height: 2;
 }
