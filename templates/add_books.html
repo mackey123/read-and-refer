@@ -4,23 +4,30 @@
 
 <h4 class="center-align">Add a book entry?</h4>
 
-<div class="row">
+<div class="row card-panel grey lighten-2">
     <form class="col s12" method="POST" action="">
+        
         <div class="row">
             <div class="input-field col s12">
                 <i class="prefix light-blue-text text-darken-4"></i>
-                <input id="icon_prefix" type="text" class="validate">
-                <label for="icon_prefix">book Name</label>
+                <input id="book_name" name="book_name" minlength="1" maxlength="50" 
+                type="text" class="validate" required>
+                <label for="book_name">Book Name</label>
             </div>
+        </div>
+        <div class="row">
             <div class="input-field col s12">
                 <i class="prefix light-blue-text text-darken-4"></i>
-                <input id="icon_telephone" type="tel" class="validate">
-                <label for="icon_telephone">Book description</label>
+                <textarea id="book_description" minlength="5" maxlength="350" name="" class="materialize-textarea validate" required></textarea>
+                <label for="book_description">Book description</label>
             </div>
+        </div>
+        <div class="row">
             <div class="input-field col s12">
                 <i class="prefix light-blue-text text-darken-4"></i>
-                <input id="icon_telephone" type="tel" class="validate">
-                <label for="icon_telephone">Book Genre</label>
+                <input id="book_genre" name="book_genre" minlength="1" maxlength="50"
+                 type="tel" class="validate" required>
+                <label for="book_genre">Book Genre</label>
             </div>
         </div>
     </form>
