@@ -22,7 +22,7 @@ mongo = PyMongo(app)
 @app.route("/")
 @app.route("/get_books")
 def get_books():
-    books = mongo.db.books.find()
+    books = list(mongo.db.books.find())
     return render_template("books.html", books=books)
 
 
@@ -55,10 +55,9 @@ def login():
         # check if username exists in db
         existing_user = mongo.db.users.find_one(
             {"username": request.form.get("username").lower()})
- 
 
         if existing_user:
-            # 
+            #
             if check_password_hash(
                     existing_user["password"], request.form.get("password")):
                         session["user"] = request.form.get("username").lower()
@@ -90,12 +89,19 @@ def profile(username):
 
     return redirect(url_for("login"))
 
-@app.route("/logout")   
+
+@app.route("/logout")
 def logout():
     # ////
     flash("Log Out Successful")
     session.pop("user")
     return redirect(url_for("login"))
+
+
+@app.route("/add_books")
+def add_books():
+    return render_template("add_books.html")
+
 
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),

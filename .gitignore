@@ -18,3 +18,25 @@ mongodb+srv://rooot:<password>@cluster0first.lhbw1.mongodb.net/myFirstDatabase?r
 python3 -m http.server
 
 python3 -m http.server
+
+
+  <ul class="collapsible #64b5f6 blue lighten-2">
+    {% for book in books %}
+
+      <li>
+          <div class="collapsible-header"><i class="fas fa-book-open"></i>Name</div>
+          <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+      </li>
+      <li>
+          <div class="collapsible-header"><i class="fas fa-pen"></i>Description</div>
+          <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+      </li>
+      <li>
+          <div class="collapsible-header"><i class="fas fa-book"></i>Genre</div>
+          <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+      </li>
+      <li>
+        <div class="collapsible-header"><i class="fas fa-bookmark"></i>Purchase link</div>
+        <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+    </li>
+  </ul>

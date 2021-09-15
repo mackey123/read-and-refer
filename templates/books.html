@@ -9,4 +9,21 @@
           {{ book.book_genre }}<br>
       {% endfor %}
 
+
+      
+  <ul class="collapsible #64b5f6 blue lighten-2">
+    {% for book in books %}
+
+      <li>
+          <div class="collapsible-header">
+              <i class="fas fa-book-open"></i>
+              <strong>{{ book.book_name }}  {{ book_description }}</strong> 
+          </div>
+          <div class="collapsible-body">
+            <p> {{ book.book_genre }} </p>
+            <p> <em> {{ book.book_description }} </em></p>
+        </div>
+      </li>
+    {% endfor %}
+
 {% endblock %}
