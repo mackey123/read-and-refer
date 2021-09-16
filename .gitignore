@@ -49,3 +49,61 @@ python3 -m http.server
           {{ book.book_description }}<br>
           {{ book.book_genre }}<br>
       {% endfor %}
+
+
+
+
+<!-- <div class="card hoverable">
+
+            <p class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="{{ book.image_url }}" alt="Book Cover Image">
+            </p>
+            
+            </div> -->
+
+      
+                <form action="action_page.php">
+                    <div class="container">
+                      <h6>Subscribe to our Newsletter</h6>
+                      <p>Lorem ipsum..</p>
+                    </div>
+                  
+                    <div class="container">
+                      <input type="text" placeholder="Name" name="name" required>
+                      <input type="text" placeholder="Email address" name="mail" required>
+                      <label>
+                        <input type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
+                      </label>
+                    </div>
+                  
+                    <div class="container">
+                      <input type="submit" value="Subscribe">
+                    </div>
+                  </form>
+
+
+
+
+<i class="fas fa-book-open"></i>
+
+                  {% for book in books %}
+      <li>
+          <div class="collapsible-header">
+              <i class="fas fa-book-open"></i>
+              <strong>{{ book.book_name }}  {{ book_description }}</strong> 
+          </div>
+          <div class="collapsible-body">
+            <p> {{ book.book_genre }} </p>
+
+            <p> 
+              <em> 
+                {{ book.book_description }}
+              </em>
+            </p>
+            <p>
+              <em> 
+                by : {{ book.created_by }}
+              </em>
+            </p>
+          </div>
+      </li>
