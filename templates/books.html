@@ -3,12 +3,8 @@
 
  
 
-      {% for book in books %}
-          {{ book.book_name }}<br>
-          {{ book.book_description }}<br>
-          {{ book.book_genre }}<br>
-      {% endfor %}
-
+    
+<h4 class="entry">All Book Reviews</h4>
 
       
   <ul class="collapsible #64b5f6 blue lighten-2">
@@ -22,6 +18,11 @@
           <div class="collapsible-body">
             <p> {{ book.book_genre }} </p>
             <p> <em> {{ book.book_description }} </em></p>
+            <p>
+              <em> 
+                by : {{ book.created_by }}
+              </em>
+            </p>
         </div>
       </li>
     {% endfor %}

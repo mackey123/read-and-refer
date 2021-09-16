@@ -98,8 +98,19 @@ def logout():
     return redirect(url_for("login"))
 
 
-@app.route("/add_books")
+@app.route("/add_books", methods=["GET", "POST"])
 def add_books():
+    if request.method == "POST":
+        books = {
+            "book_name": request.form.get("book_name"),
+            "book_description": request.form.get("book_description"),
+            "book_genre": request.form.get("book_genre"),
+            "created_by": session["user"]
+        }
+        mongo.db.books.insert_one(books)
+        flash("Book Successfully added!")
+        return redirect(url_for("get_books"))
+
     return render_template("add_books.html")
 
 
