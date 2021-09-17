@@ -1,10 +1,22 @@
 {% extends "base.html" %}
-{%  block content %}
+{% block content %}
 
- 
 
-    
-<a href="{{ url_for('contact') }}"> </a>
+<h3 class="center-align reg" id="entry1">Log in</h3>
+
+<div class="row">
+    <form class="col s12 m8 offset-m2" method="POST" action="contact.html">
+        <div class="card-panel">
+            <!-- username -->
+            <div class="row">
+                <div class="input-field col s12">
+                    <i class="fas fa-user-cog prefix"></i>
+                    <input id="username" name="username" type="text" class="validate" minlenghth="5" maxlength="20"
+                     pattern="^[a-zA-Z0-9]{5,20}$" required>
+                    <label for="username">Username:</label>
+                </div>
+            </div>
+           
 
 
 {% endblock %}

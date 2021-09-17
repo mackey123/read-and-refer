@@ -1,4 +1,4 @@
-/* footer styles */
+/* main styles */
 
 body {
     display: flex;
@@ -6,6 +6,9 @@ body {
     flex-direction: column;
     /* background-image: url("/static/images/121aw.jpg"); */
   }
+
+
+  /* images slide effect adapted from W3C schools */
 
   .parallax {
     /* The image used */
@@ -21,22 +24,24 @@ body {
     background-size: cover;
   }
 
-
-
   main {
     flex: 1 0 auto;
   }
+
+/* footer */
 
   .socials{
       display: inline-table;
       font-size: 25px;
   }
 
+
   .socials:hover{
       color: #0381c0;;
   }
 
-/* main styles */
+
+
 
 .btn-small{
     margin: 5px;
@@ -96,6 +101,16 @@ body{
     background-color: rgb(249, 255, 255);
 }
 
+
+
+
+
+/* cards  */
+#cards{
+    display: inline-block;
+    margin: 17px;
+    padding: 17px;
+}
 
 
 

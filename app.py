@@ -25,6 +25,7 @@ def get_books():
     books = list(mongo.db.books.find())
     return render_template("books.html", books=books)
 
+# register
 
 @app.route("/register", methods=["GET", "POST"])
 def register():
@@ -48,6 +49,7 @@ def register():
         return redirect(url_for("profile", username=session["user"]))
     return render_template("register.html")
 
+# login
 
 @app.route("/login", methods=["GET", "POST"])
 def login():
@@ -57,7 +59,7 @@ def login():
             {"username": request.form.get("username").lower()})
 
         if existing_user:
-            #
+            # check password
             if check_password_hash(
                     existing_user["password"], request.form.get("password")):
                         session["user"] = request.form.get("username").lower()
@@ -79,6 +81,7 @@ def login():
     return render_template("login.html")
 
 
+# users profile
 @app.route("/profile/<username>", methods=["GET", "POST"])
 def profile(username):
     username = mongo.db.users.find_one(
@@ -97,7 +100,7 @@ def logout():
     session.pop("user")
     return redirect(url_for("login"))
 
-
+# add a book review
 @app.route("/add_books", methods=["GET", "POST"])
 def add_books():
     if request.method == "POST":
@@ -114,10 +117,11 @@ def add_books():
     return render_template("add_books.html")
 
 
+# edit a book review
 @app.route("/edit_books/<books_id>", methods=["GET", "POST"])
 def edit_books(books_id):
     books = mongo.db.books.find_one({"_id": ObjectId(books_id)})
-
+    print(books)
     return render_template("edit_books.html", books=books,)
 
 

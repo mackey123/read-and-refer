@@ -19,9 +19,10 @@
 </head>
 
 <body>
+    <!-- background image -->
     <div class="parallax">
+        
     <!-- Navbar adapted from materialize -->
-
     <header>
         <nav class="nav-extended text-shadow #64b5f6 blue lighten-2">
             <div class="nav-wrapper text-shadow">
@@ -30,7 +31,7 @@
 
                 <ul class="right hide-on-med-and-down">
                     <li><a href="{{ url_for('get_books') }}">Home</a></li>
-                    <li><a href="#">Contact us</a></li>
+                    <li><a href="/contact.html">Contact us</a></li>
                     {% if session.user %}
                         <li><a href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
                         <li><a href="{{ url_for('add_books') }}">Add Book Entry</a></li>
@@ -45,11 +46,11 @@
         </nav>
 
     
-
+         <!-- mobile sidenav -->
         <ul class="sidenav" id="mobile-demo">
                     <li><h4 class="center-align text-darken-4" >Read & Refer!</h4></li>
                     <li><a href="{{ url_for('get_books') }}">Home</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
                     {% if session.user %}
                         <li><a href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
                         <li><a href="{{ url_for('add_books') }}">Add Book Entry</a></li>
@@ -165,10 +166,10 @@
                 <div class="col l4 offset-l2 s12">
                     <h4 class="white-text tooltipped" data-position="bottom" data-tooltip="social links below">Socials</h4>
                     <ul class="socials">
-                        <li><a class="grey-text text-lighten-5" href="#!"> <i class="fab fa-facebook"> </i> </a></li>
-                        <li><a class="grey-text text-lighten-5" href="#!"> <i class="fab fa-instagram"> </i> </a></li>
-                        <li><a class="grey-text text-lighten-5" href="#!"> <i class="fab fa-linkedin-in"> </i></a></li>
-                        <li><a class="grey-text text-lighten-5" href="#!"> <i class="fab fa-twitter"> </i> </a></li>
+                        <li><a class="grey-text text-lighten-5" href="https://www.facebook.com/" target="_blank"> <i class="fab fa-facebook"> </i> </a></li>
+                        <li><a class="grey-text text-lighten-5" href="https://www.instagram.com/" target="_blank"> <i class="fab fa-instagram"> </i> </a></li>
+                        <li><a class="grey-text text-lighten-5" href="https://ie.linkedin.com/in/sean-mackey-4784641bb" target="_blank"> <i class="fab fa-linkedin-in"> </i></a></li>
+                        <li><a class="grey-text text-lighten-5" href="https://twitter.com/?lang=en" target="_blank"> <i class="fab fa-twitter"> </i> </a></li>
                     </ul>
                 </div>
             </div>
