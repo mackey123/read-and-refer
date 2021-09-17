@@ -8,32 +8,42 @@
  <ul class="collapsible #64b5f6 blue lighten-2">
    {% for book in books %}
 
+  
+   <li class="center-align">
+    <div class="collapsible-header">
+       <div class="col s3">
+         <a href="" class="btn-small green accent-4">Done</a>
+         <a href="{{ url_for('edit_books', books_id=book._id)  }}" class="btn-small light-blue lighten-1">Edit</a>
+       </div>
+      <!-- <i class="fas fa-book-open"></i> -->
+          
+       <img class="activator" src="{{ books.image_url }}" alt="Book Cover Image">
+         
+       <strong>{{ book.book_name }} {{ book_description }}</strong>
+    </div>
+    <div class="collapsible-body">
+      <p> 
+        {{ book.book_genre }} 
+      </p>
+      <p>
+        <em>
+          {{ book.book_description }}
+        </em>
+      </p>
+      <p>
+        <em>
+          by : {{ book.created_by }}
+        </em>
+      </p>
+      
 
-    <li class="center-align"> 
-      <div class="collapsible-header">
-        <div class="col s3">
-          <a href="" class="btn-small green accent-4">Done</a>
-          <a href="{{ url_for('edit_books', books_id=book._id)  }}" class="btn-small light-blue lighten-1">Edit</a>
-        </div>
-        <!-- <i class="fas fa-book-open"></i> -->
-        <strong>{{ book.book_name }}  {{ book_description }}</strong> 
-      </div>
-         <div class="collapsible-body">
-            <p> {{ book.book_genre }} </p>
 
-            <p> 
-                <em> 
-                   {{ book.book_description }}
-                </em>
-             </p>
-             <p>
-                 <em> 
-                     by : {{ book.created_by }}
-                 </em>
-             </p>
-         </div>
-    </li>
+    </div>
+  </li>
 
+
+
+  
 
 
     {% endfor %}

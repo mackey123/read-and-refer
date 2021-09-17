@@ -107,3 +107,26 @@ python3 -m http.server
             </p>
           </div>
       </li>
+
+
+
+
+
+
+
+      <img class="activator" src="{{ books.image_url }}" alt="Book Cover Image">
+           
+         <strong>{{ book.book_name }} {{ book_description }}</strong>
+      </div>
+      <div class="collapsible-body">
+        <p> {{ book.book_genre }} </p>
+        <p>
+          <em>
+            {{ book.book_description }}
+          </em>
+        </p>
+        <p>
+          <em>
+            by : {{ book.created_by }}
+          </em>
+        </p>

@@ -138,31 +138,26 @@ This is the Readme for Read & Refer website!
  I hope to provide all the necessary information and and answer any questions you may have.
  I decided to take the approach of making the website first on normal broswer format as in a laptop or computer, 
  then styled and added what was needed for tablet and mobile devices.
- It is responsive on all devices, view the website here 
+ It is responsive on all devices, view the website here :
 
 
-## User Experience (UX)
-### User Stories
-## First time user goals
-a.  As a first I want to be able to get the information regarding what this site is about as soon as I enter.
+# User Experience (UX)
+## User Stories
+## First Time and Returning Users
+### All users of this site will be looking for similar things in this project as outlined below:
 
-b. As a first time user I want to be able to know what the site is about upon entering the home page.
+- Navigate easy through all devices and have all areas of website responsive.
+- To be able to view/preview the site before creating an account.
+- Have clear Registration/Log In pages.
+- To be able to view book reviews
+- Have the ability to add their own reviews and keep a record of them.
+- To be able to edit and delete reviews posted.
+- For the review information to be clear and concise.
+- To  be able to securely log out of the site.
+- Find links to other sites and ares to purchase books.
+- To be provided with contact information and social links.
+- To store date securely 
 
-c.  As a first time user I want to be able to contact the creators or view their socials to contact aswell.
-
-## Returning user goals user goals
-a. As a returning visitor I want to be able to easily contact someone through the site regarding the Scottish Highlands.
-
-b.  As a returning visitor I want to find more information regarding the scottish highlands.
-
-c.  As a returning visitor I want to be taken to a new page when I open a link and not taken off the current page I am on.
-
-## Frequent user goals
-a. As a frequent user I want to be view the destinations talked about on a map.
-
-b. As a frequent user I want to be left with more knowledge on the The Highlands then before I visited.
-
-c. As a frequent user I want to be able to be able to receive more information after contacting.
 
 ## Design 
 
@@ -194,22 +189,25 @@ I will also include screenshots below.
 
 
 ## Features
+- Forms and contact section to allow users to give feedback.
 
 - The site is responsive and can be viewed on all viewports.
 
 - Contains interactive elements and pop ups.
 
-- Headers change colour when hovered over.
+- Store users data and allow them to create a account.
 
-- Forms and contact section to allow users to give feedback.
+- Can add a book Review
+
+-
 
 ## Future features
 
-- I would also like to include a questionnaire about the highlands.
+- I would also like to include a questionare about peoples favourite books and sites
 
 - Possibly add a game in the future to add even more interactivity.
 
-- I would use a article element instead of a section element as I got a warning in the html validator saying I should add more h2 to h6 elemnts to that section, however I discovered this very late and knew it would not give my code any errors so I left it but will implement next time.
+
 
 ## Technologies used
 
@@ -473,14 +471,6 @@ https://jigsaw.w3.org/css-validator/validator
 
 - Used to correct code
 
-## Pintrest 
 
-- Used for images
 
-https://www.pinterest.com/
 
-## Inversnaid
-
-- Poem used by poet "Gerard Manley Hopkins" 
-
-https://www.poetryfoundation.org/poets/gerard-manley-hopkins

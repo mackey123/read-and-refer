@@ -49,7 +49,7 @@
         <ul class="sidenav" id="mobile-demo">
                     <li><h4 class="center-align text-darken-4" >Read & Refer!</h4></li>
                     <li><a href="{{ url_for('get_books') }}">Home</a></li>
-                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Contact Us</a></li>
                     {% if session.user %}
                         <li><a href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
                         <li><a href="{{ url_for('add_books') }}">Add Book Entry</a></li>
@@ -62,7 +62,7 @@
     </header>
 
 
-
+    
 
 <div class="row">
     <h2 class="entry" id="entry1">
@@ -115,13 +115,13 @@
             <h4 class="entry" id="entry1"> Like what you seen here and want more? Here are some of our sites we love to use!</h4>
               <ul class="entry" id="entry1">
                  <li class="links"> 
-                     <a href="https://www.goodreads.com/">Good Reads </a>
+                     <a href="https://www.goodreads.com/" target="_blank">Good Reads </a>
                  </li>
                  <li class="links">
-                      <a href="https://www.librarything.com/">Libary Thing </a>
+                      <a href="https://www.librarything.com/" target="_blank">Libary Thing </a>
                  </li>
                  <li class="links"> 
-                     <a href="https://bookriot.com/">Book Riot </a>
+                     <a href="https://bookriot.com/" target="_blank">Book Riot </a>
                  </li>
               </ul>
     </div>
