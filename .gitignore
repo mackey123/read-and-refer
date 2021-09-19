@@ -111,7 +111,8 @@ python3 -m http.server
 
 
 
-
+      <input id="image_url" name="image_url" type="url" class="validate">
+    <label for="image_url">Book Image URL (Optional)</label>
 
 
       <img class="activator" src="{{ books.image_url }}" alt="Book Cover Image">
@@ -173,3 +174,81 @@ python3 -m http.server
   </li>
 
 
+<div class="card center-align">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" src="{{ book.image_url }}" alt="Book Cover Image">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4">Book Info</span>
+      <p><a href="#">Purchase Link</a></p>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4">{{ book.book_name }} {{ book_description }}</span>
+      <p><em> {{ book.book_description }}</em></p>
+      <p>
+        <em>
+          by : {{ book.created_by }}
+        </em>
+      </p>
+      
+    </div>
+  </div>
+
+
+
+
+
+
+  <!-- <ul class="collapsible #64b5f6 blue lighten-2"> -->
+   {% for book in books %}
+
+   <div class="card center-align" id="cards">
+     <div class="card-image waves-effect waves-block waves-light">
+       <!-- <img class="activator" src="{{ book.image_url }}" alt="Book Cover Image"> -->
+     </div>
+     <div class="card-content">
+       <span class="card-title activator grey-text text-darken-4">Book Info</span>
+       <p><a href="#">Purchase Link</a></p>
+     </div>
+     <div class="card-reveal">
+       <span class="card-title grey-text text-darken-4">{{ book.book_name }} {{ book_description }}</span>
+       <p>
+         <em> {{ book.book_description }}
+
+         </em>
+       </p>
+       <p>
+         <em>
+           by : {{ book.created_by }}
+         </em>
+       </p>
+
+     </div>
+   </div>
+
+
+
+
+   <!-- {% for books in books %}
+                {% if books.books_id == book.books_name %}
+                    <label value="{{ books.books_name }}" selected>{{ books.books_name }}</option>
+                {% else %}
+                    <label value="{{ books.books_name }}">{{ books.books_name }}<label>
+                {% endif %}
+            {% endfor %}  -->
+
+
+            <h4 class="entry" id="entry1">Edit a book entry?</h4>
+<!-- <h2> {{ books }} </h2> -->
+
+
+
+
+
+<h4 class="entry" id="entry1"> All Book Reviews</h4>
+{% for book in books %}
+                
+<div class="card medium">
+  <div class="container">
+    <!-- <img class="activator" src="{{ book.image_url }}" alt="Book Cover Image"> -->
+  </div>

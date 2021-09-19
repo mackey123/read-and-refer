@@ -8,3 +8,10 @@ $(document).ready(function(){
 
 
 
+// contact form
+  function myFunction() {
+    alert("Your details have been submitted");
+  }
+
+
+

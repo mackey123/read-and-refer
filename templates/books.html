@@ -2,35 +2,41 @@
 {%  block content %}
 
 <h4 class="entry" id="entry1"> All Book Reviews</h4>
-<!-- <ul class="collapsible #64b5f6 blue lighten-2"> -->
-   {% for book in books %}
-
-   <div class="card center-align" id="cards">
-     <div class="card-image waves-effect waves-block waves-light">
-       <!-- <img class="activator" src="{{ book.image_url }}" alt="Book Cover Image"> -->
-     </div>
-     <div class="card-content">
-       <span class="card-title activator grey-text text-darken-4">Book Info</span>
-       <p><a href="#">Purchase Link</a></p>
-     </div>
-     <div class="card-reveal">
-       <span class="card-title grey-text text-darken-4">{{ book.book_name }} {{ book_description }}</span>
-       <p>
-         <em> {{ book.book_description }}
-
-         </em>
-       </p>
-       <p>
-         <em>
-           by : {{ book.created_by }}
-         </em>
-       </p>
-
-     </div>
-   </div>
+{% for book in books %}
+                
+<div class="card medium">
+  <div class="container">
+  </div>
+  <div class="card-content">
+    <span class="card-title activator grey-text text-darken-4"><strong>{{ book.book_name }} {{ book_description }}<i class="material-icons right"></i></strong></span>
+        <div class="col s3">
+          <a href="" class="btn-small green accent-4">Done</a>
+          <a href="{{ url_for('edit_books', book_id=book._id) }}" class="btn-small light-blue lighten-1">Edit</a>
+        </div>
+    <p><a href="#">This is a link</a></p>
+  </div>
+  <div class="card-reveal col s9">
+    <span class="card-title grey-text text-darken-4">{{ book.book_name }}<i class="material-icons right">close</i></span>
+    <p>
+      <em>
+        {{ book.book_description }}
+      </em>
+    </p>
+    <p>
+      <em>
+        by : {{ book.created_by }}
+      </em>
+    </p>
+  </div>
+</div>
+ 
   
 
 
     {% endfor %}
 
 {% endblock %}
+
+
+
+
