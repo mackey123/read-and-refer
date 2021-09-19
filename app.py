@@ -109,7 +109,7 @@ def add_books():
         books = {
             "book_name": request.form.get("book_name"),
             "book_description": request.form.get("book_description"),
-            # "image_url": request.form.get("image_url"),
+            "book_rating": request.form.get("book_rating"),
             "book_genre": request.form.get("book_genre"),
             "created_by": session["user"]
         }
@@ -123,8 +123,19 @@ def add_books():
 # edit a book review
 @app.route("/edit_books/<book_id>", methods=["GET", "POST"])
 def edit_books(book_id):
+    if request.method == "POST":
+        submit = {
+            "book_name": request.form.get("book_name"),
+            "book_description": request.form.get("book_description"),
+            "book_rating": request.form.get("book_rating"),
+            "book_genre": request.form.get("book_genre"),
+            "created_by": session["user"]
+        }
+        mongo.db.books.update({"_id": ObjectId(book_id)}, submit)
+        flash("Book Successfully Updated!")
+
+
     book = mongo.db.books.find_one({"_id": ObjectId(book_id)})
-    # books = mongo.db.books.find().sort("book_name", 1)
     return render_template("edit_books.html", book=book,)
 
 
