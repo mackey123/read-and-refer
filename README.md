@@ -1,15 +1,5 @@
 
-
-
-
-
-
-
-
 ![Mock up](static/images/respo.jpg.png)
-
-
-
 
 
 ## Welcome 
@@ -18,7 +8,7 @@ This is the Readme for Read & Refer website!
  I hope to provide all the necessary information and and answer any questions you may have.
  I decided to take the approach of making the website first on normal broswer format as in a laptop or computer, 
  then styled and added what was needed for tablet and mobile devices.
- It is responsive on all devices, view the website here :
+ It is responsive on all devices, view the website here :  https://flask-read-and-refer-project.herokuapp.com/
 
 
 # User Experience (UX)
@@ -231,7 +221,7 @@ The admin and user are both able to store their data which is sent to a mongo da
 
 - After using the Google dev tools to help correct any mistakes in my code I  came across a error of "Failed to load resource: the server responded with a status of 404 (Not Found)" so i added a "link rel="shortcut icon" href="#" into the head of my html pages.
 
-- materialize was not allowing my side nav components to be clicked on 
+- materialize was not allowing my side nav components to be clicked on to fix this I had to get rid of the opacity on my background image.
 
 
 ## Deployment
@@ -397,7 +387,7 @@ https://jigsaw.w3.org/css-validator/validator
 
 http://ami.responsivedesign.is/#
 
-- used for mock up
+- Used for mock up
 
 
 

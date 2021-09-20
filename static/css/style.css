@@ -1,7 +1,22 @@
 
-
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@500&display=swap');
 /* main styles */
+
+.reg{
+  color: #64b5f6;
+}
+
+.text-shadow{
+  text-shadow:4px 4px  rgba(0,0,0,0);
+}
+
+.flashes h4{
+  line-height: 2;
+}
+
+body{
+  background-color: rgb(249, 255, 255);
+}
 
 .em{
   font-weight: 800;
@@ -28,12 +43,9 @@ body {
     min-height: 100vh;
     flex-direction: column;
     font-family: 'Be Vietnam Pro', sans-serif;
-    /* background-image: url("/static/images/121aw.jpg"); */
   }
 
-
   /* images slide effect adapted from W3C schools */
-
   .parallax {
     /* The image used */
     background-image: url("/static/images/fireplace.jpg");
@@ -43,7 +55,6 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    
   }
 
   main {
@@ -68,8 +79,8 @@ body {
       color: #0381c0;;
   }
 
-  /* edit and done button styles */
 
+  /*  button styles */
 .btn-small{
     margin: 5px;
 }
@@ -81,7 +92,7 @@ body {
 
 
 .links{
-    font-size: 20px;
+    font-size: 33px;
 }
 
  #logo{
@@ -107,27 +118,36 @@ div .brand-logo{
 #entry1{
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     font-weight: 800;
-    
-}
-
-.reg{
-    color: #64b5f6;
 }
 
 
-.text-shadow{
-    text-shadow:4px 4px  rgba(0,0,0,0);
+#entry2{
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-weight: 800;
 }
 
-.flashes h4{
-    line-height: 2;
+#entry3{
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-weight: 800;
+}
+#entry4{
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-weight: 800;
+}
+#entry5{
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-weight: 800;
 }
 
-
-body{
-    background-color: rgb(249, 255, 255);
+#entry6{
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-weight: 800;
 }
 
+#entry7{
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-weight: 800;
+}
 
 
 /* cards  */
@@ -149,6 +169,14 @@ body{
    text-align: center;
  }
 
+  .card-panel1 {
+  max-width: 800px;
+ }
+
+ #search{
+  margin-left: auto;
+  margin-right: auto;
+ }
 
 /* Contact styles adapted from w3c schools*/
 
@@ -195,15 +223,19 @@ input[type=text], select, textarea{
     background-color: #0381c0;
   }
 
-   #contact1{
+   .contact1{
        font-size: 25px;
        color: #7bc1fa;
        font-weight: 400;
    }
 
 
+   .container.main{
+     text-align: center;
+   }
 
-  
+
+
   /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 600px) {
     .col-25, .col-75, input[type=submit] {

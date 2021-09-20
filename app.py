@@ -32,8 +32,8 @@ def search():
     books = list(mongo.db.books.find({"$text": {"$search": query}}))
     return render_template("books.html", books=books)
 
-# register
 
+# register
 @app.route("/register", methods=["GET", "POST"])
 def register():
     if request.method == "POST":
@@ -83,7 +83,6 @@ def login():
             # unknown username
             flash("Incorrect Username and/or Password")
             return redirect(url_for("login"))
-
 
     return render_template("login.html")
 
@@ -140,7 +139,6 @@ def edit_books(book_id):
         mongo.db.books.update({"_id": ObjectId(book_id)}, submit)
         flash("Book Successfully Updated!")
 
-
     book = mongo.db.books.find_one({"_id": ObjectId(book_id)})
     return render_template("edit_books.html", book=book,)
 
@@ -158,6 +156,7 @@ def get_bookreviews():
     return render_template("bookreviews.html", bookreviews=bookreviews)
 
 
+# admin add genre
 @app.route("/add_genre", methods=["GET", "POST"])
 def add_genre():
     if request.method == "POST":

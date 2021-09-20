@@ -5,13 +5,13 @@
 <h3 class="center-align reg" id="entry1">Contact Us</h3>
 
 <div class="row">
-    <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('contact') }}" onsubmit="myFunction()">
+    <form class="col s12 m8 offset-m2" action=" {{ url_for('contact') }}" onsubmit="myFunction()">
 
         <div class="containerc">
-            <form action="action_page.php">
+            <div> 
                 <div class="row">
                     <div class="col-25">
-                        <label for="fname" id="contact1"> Name</label>
+                        <label for="fname" class="contact1"> Name</label>
                     </div>
                     <div class="col-75">
                         <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
@@ -19,7 +19,7 @@
                 </div>
                 <div class="row">
                     <div class="col-25">
-                        <label for="lname" id="contact1">subject</label>
+                        <label for="lname" class="contact1">subject</label>
                     </div>
                     <div class="col-75">
                         <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
@@ -27,19 +27,19 @@
                 </div>
                 <div class="row">
                     <div class="col-25">
-                        <label for="subject" id="contact1">What's on your mind?</label>
+                        <label for="subject" class="contact1">What's on your mind?</label>
                     </div>
                     <div class="col-75">
                         <input id="subject" name="subject" placeholder="Write something.." required>
                     </div>
                 </div>
                 <div class="row center-align">
-                    <input type="submit" value="Submit">
+                    <input type="submit">
                 </div>
-            </form>
+            </div>
         </div>
 
-
+    </form>
 </div>
 
 
