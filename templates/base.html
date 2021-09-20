@@ -10,6 +10,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
         type="text/css">
+    <link rel="shortcut icon" href="#">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
 
     {% block styles %}
@@ -24,10 +25,10 @@
         
     <!-- Navbar adapted from materialize -->
     <header>
-        <nav class="nav-extended text-shadow #64b5f6 blue lighten-2">
-            <div class="nav-wrapper text-shadow">
+           <nav class="nav-extended text-shadow #64b5f6 blue lighten-2">
+            <div class="nav-wrapper">
                 <a href="{{ url_for('get_books') }}" class="brand-logo" id="logo">Read & Refer!</a>
-                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fas fa-bars"></i></a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger left"><i class="fas fa-bars"></i></a>
 
                 <ul class="right hide-on-med-and-down">
                     <li><a href="{{ url_for('get_books') }}">Home</a></li>
@@ -46,14 +47,14 @@
 
                 </ul>
             </div>
-        </nav>
+           </nav>
 
     
          <!-- mobile sidenav -->
-        <ul class="sidenav" id="mobile-demo">
+           <ul class="sidenav" id="mobile-demo">
                     <li><h4 class="center-align text-darken-4" >Read & Refer!</h4></li>
                     <li><a href="{{ url_for('get_books') }}">Home</a></li>
-                    <li><a href="">Contact Us</a></li>
+                    <li><a href="{{ url_for('contact') }}">Contact Us</a></li>
                     {% if session.user %}
                         <li><a href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
                         <li><a href="{{ url_for('add_books') }}">Add Book Entry</a></li>
@@ -65,7 +66,7 @@
                         <li><a href="{{ url_for('login') }}">Log In</a></li>
                         <li><a href="{{ url_for('register') }}">Register</a></li>
                     {% endif %}
-        </ul>
+           </ul>
     </header>
 
 
@@ -105,13 +106,6 @@
         {% endblock %}
     </main>
 
-    
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
-
-
 
     <div class="row"> 
            <h4  class="entry" id="entry1"> 
@@ -137,45 +131,28 @@
 </div>
 
     <!-- footer content -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
     <footer class="page-footer #64b5f6 blue lighten-2">
         <div class="container">
             <div class="row">
                 <div class="col l6 s12">
                     <h4 class="white-text">Read & Refer!</h4>
                     <p class="grey-text text-lighten-4">
-
-                        <!-- <form action="action_page.php">
-                            <div class="container">
-                              <h6>Subscribe to our Newsletter</h6>
-                              <p>Lorem ipsum..</p>
-                            </div>
-                          
-                            <div class="container">
-                              <input type="text" placeholder="Name" name="name" required>
-                              <input type="text" placeholder="Email address" name="mail" required>
-                              <label>
-                                <input type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
-                              </label>
-                            </div>
-                          
-                            <div class="container">
-                              <input type="submit" value="Subscribe">
-                            </div>
-                          </form> -->
-
+                       You can also contact us on the email Read-and-refer@gmail.com!
                     </p>
-
-
-                        
                 </div>
 
                 <div class="col l4 offset-l2 s12">
                     <h4 class="white-text tooltipped" data-position="bottom" data-tooltip="social links below">Socials</h4>
                     <ul class="socials">
-                        <li><a class="grey-text text-lighten-5" href="https://www.facebook.com/" target="_blank"> <i class="fab fa-facebook"> </i> </a></li>
-                        <li><a class="grey-text text-lighten-5" href="https://www.instagram.com/" target="_blank"> <i class="fab fa-instagram"> </i> </a></li>
-                        <li><a class="grey-text text-lighten-5" href="https://ie.linkedin.com/in/sean-mackey-4784641bb" target="_blank"> <i class="fab fa-linkedin-in"> </i></a></li>
-                        <li><a class="grey-text text-lighten-5" href="https://twitter.com/?lang=en" target="_blank"> <i class="fab fa-twitter"> </i> </a></li>
+                        <span><a class="grey-text text-lighten-5" href="https://www.facebook.com/" target="_blank"> <i class="fab fa-facebook"> </i> </a></span>
+                        <span> <a class="grey-text text-lighten-5" href="https://www.instagram.com/" target="_blank"> <i class="fab fa-instagram"> </i> </a></span>
+                        <span> <a class="grey-text text-lighten-5" href="https://ie.linkedin.com/in/sean-mackey-4784641bb" target="_blank"> <i class="fab fa-linkedin-in"> </i></a></span>
+                        <span><a class="grey-text text-lighten-5" href="https://twitter.com/?lang=en" target="_blank"> <i class="fab fa-twitter"> </i> </a></span>
                     </ul>
                 </div>
             </div>

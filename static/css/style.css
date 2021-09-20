@@ -1,7 +1,27 @@
-/* font awesome Be Vietnam Pro */
-@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500&display=swap');
 
+
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@500&display=swap');
 /* main styles */
+
+.em{
+  font-weight: 800;
+  font-family: 'Be Vietnam Pro', sans-serif;
+
+}
+
+ .fa-arrow-right{
+  font-size: 20px;
+  padding: 5px;
+
+ }
+ .fa-arrow-left{
+   font-size: 20px;
+   padding: 5px;
+ }
+
+.by{
+  font-weight: 800;
+}
 
 body {
     display: flex;
@@ -23,7 +43,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 0.9;
+    
   }
 
   main {
@@ -32,9 +52,15 @@ body {
 
 /* footer */
 
-  .socials{
-      display: inline-table;
-      font-size: 25px;
+  ul .socials{
+      font-size: 20px;
+      padding: 10px;
+  }
+
+  span a{
+    padding: 10px;
+    font-size: 25px;
+    float: left;
   }
 
 
@@ -67,8 +93,10 @@ a:hover{
     color: #0381c0;
 }
 
-
-
+/*  header styles */
+div .brand-logo{
+  font-size: 20px;
+}
 
 .entry{
     color: #7bc1fa;
@@ -114,11 +142,15 @@ body{
 }
  .card-reveal{
    background-color: #7bc1fa;
+   text-align: center;
+ }
+
+ .card-content{
+   text-align: center;
  }
 
 
-
-/* Contact styles */
+/* Contact styles adapted from w3c schools*/
 
 /* Style inputs, select elements and textareas */
 input[type=text], select, textarea{
@@ -133,8 +165,7 @@ input[type=text], select, textarea{
   /* Style the label to display next to the inputs */
   label {
     padding: 12px 12px 12px 0;
-    
-
+  
   }
   
   /* Style the submit button */
@@ -169,14 +200,9 @@ input[type=text], select, textarea{
        color: #7bc1fa;
        font-weight: 400;
    }
-  
-  
-  /* Clear floats after the columns */
-  /* .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  } */
+
+
+
   
   /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 600px) {
@@ -185,10 +211,6 @@ input[type=text], select, textarea{
       margin-top: 0;
     }
   }
-
-
-
-
 
 
 

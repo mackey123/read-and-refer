@@ -1,134 +1,14 @@
 
 
-Welcome 
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. The last update to this file was: **July 2, 2021**
 
-## Gitpod Reminders
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
 
-`python3 -m http.server`
 
-A blue button should appear to click: _Make Public_,
 
-Another blue button should appear to click: _Open Browser_.
+![Mock up](static/images/respo.jpg.png)
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
 
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
-
-------
-
-## Release History
-
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
-
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
-
-**July 2 2021:** Remove extensions that are not available in Open VSX.
-
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
-
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
-
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
-
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-![Mock up](assets/images/mockup.png)
-
-
-![Mock up](assets/images/mockup2.jpg.png)
-
-
-![Mock up](assets/images/mockup3.jpg.png)
 
 
 
@@ -148,7 +28,7 @@ This is the Readme for Read & Refer website!
 
 - Navigate easy through all devices and have all areas of website responsive.
 - To be able to view/preview the site before creating an account.
-- Have clear Registration/Log In pages.
+- Have clear Registration and Log In pages.
 - To be able to view book reviews
 - Have the ability to add their own reviews and keep a record of them.
 - To be able to edit and delete reviews posted.
@@ -164,6 +44,8 @@ This is the Readme for Read & Refer website!
 
 ### Typograpghy
 
+- For my typograpghy I used a Google font of Be Vietnam Pro with a fallback of sans serif.
+
 
 
 ### Imagery 
@@ -171,6 +53,8 @@ This is the Readme for Read & Refer website!
 
 
 ### Colour Scheme
+
+- I used a colour scheme involving the materilize blue of "#64b5f6 blue lighten-2" along with white and different variations such as "#7bc1fa" and "#0381c0;" for when a anchor is hovered over.
 
 
 
@@ -181,11 +65,12 @@ For the design of my wireframes I used Balsamic, You can find the link to the si
 I will also include screenshots below.
 
 
-![wireframe](assets/images/wireframes-two-normal.png)
+![wireframe](/static/images/20main.jpg.png)
 
 
+![wireframe](/static/images/iphone.jpg.png)
 
-![wireframe](assets/images/tablet-wireframe.png)
+![wireframe](/static/images/main.2.png)
 
 
 ## Features
@@ -193,19 +78,37 @@ I will also include screenshots below.
 
 - The site is responsive and can be viewed on all viewports.
 
-- Contains interactive elements and pop ups.
-
 - Store users data and allow them to create a account.
 
 - Can add a book Review
 
--
+- Add a Book Review
+
+- Edit a book review 
+
+- Delete a book review
+
+- Register a Accout 
+
+- view Profile 
+
+- Flash messages to let user know if it has gone through or/and been created.
+
+- site fully responsive on all viewporths and devices.
+
+- Search bar to search for book reviews or reset page if book review is not found.
+
+- Contact section to allow users to get in touch and email available.
+
+- all links take the user to a new page and links are related the book review websites above the footer.
 
 ## Future features
 
 - I would also like to include a questionare about peoples favourite books and sites
 
 - Possibly add a game in the future to add even more interactivity.
+
+- allow the admin to delete book reviews or modiy them more so.
 
 
 
@@ -219,14 +122,15 @@ I will also include screenshots below.
 - Markdown
 - Python 
 - Flask
+- Pymongo
 
 ## Testing 
-For my testing I used the W3C validator the html in my project and for javascript I used Jshint and finally Jigsaw for my CSS. 
+
 
 
 ## To test my code I did it in the following way 
 
-- I ran the code through the three different validators for each of my three languages.
+- I ran the code through the  different validators for each of my languages.
 
 i. I would copy sections of code so as not to do a whole page and fix any problems within the section first.
 
@@ -234,9 +138,9 @@ ii. Paste the code into the correct tester.
 
 iii. Once results and errors (if present) are visble, examine and correct the changes needed.
   
-iv. Repeated the same process for the three languages.
+iv. Repeated the same process for all the languages.
 
-- I would browse through the site on the three different types of view port to ensure it worked well.
+- I would browse through the site on all the different types of view port to ensure it worked well.
 
 i. I would browse through all of the site on the mobile and tablet viewports.
 
@@ -257,105 +161,77 @@ ii. I would interact and click all the links available to make sure they worked.
 iii. Interact with all interactive elements and code to make sure it ran they way its supposed to.
 
 
-## changes made 
-
+## Security Testing
+All pages were tested to make sure that no unauthorised users can access pages they should not have access to.
+If a user is logged out, they have no access to any pages they should not have access to.
+All admin only pages can only be accessed by the admin.
+Redirects are all working as expected, with correct flash messages present.
 
 ## Testing user stories 
 
-## First time user goals
-A.   "As a first I want to be able to get the information regarding what this site is about as soon as I enter."
+- Navigate easy through all devices and have all areas of website responsive.
 
-- Upon entering the site there is a header stated "The scottish highlands to greet you and let you know what you are reading about".
-
-- There is a image of the Scottish highlands in the background to highlight that this site is about travel destinations upon entering the home page.
-
-- There is a contact option in the nav-bar so the user could sign up or contact for even more information.
+The site is fully responsive regardless of device used, and the navbar is clear and easy to navigate through on both mobile and desktop/laptop devices.
 
 
-B.   "As a first time user I want to be able to know what the site is about upon entering the home page."
 
-- I have added a preloader stating "Ready for a adventure" to excite the user and let them know that this is a "outdoor site" and that its not going to be a plain site.
+- To be able to view/preview the site before creating an account.
 
-- The background image of the mountains lets the user know this site is a travel site.
-
-- The header stating the "Scottish highlands" lets the user know exactly what this site is about straight away.
-
-- The title of the site is the Scottish Highlands and the nav-bar has all the correct headers to make the user know what this site is about.
-
-C.  "As a first time user I want to be able to contact the creators or view their socials to contact aswell."
-
-- There is a section in the navbar called contact which has a contact form the user can interact with to contact the makers.
-
-- In this contact section there is also a sign up form the user can use to get in touch with the makers or to get new information every week.
-
-- In the footer of the site there is a link to four socials of the maker.
+Users will have full access to the book reviews created before registering an account they may not edit or delete untill they have a account.
 
 
-## Returning user goals user goals
-a.  "As a returning visitor I want to be able to interact with elements on the site."
+- Have clear Registration and Log In pages.
 
-- All headers on the site have the correct JS to change colour when the mouse has entered over them
-
-- There is time and date buttons the user can interact with to get either the time or date.
-
-- The Gallery Contact and Signup section all have interactive elements wether it be changing images or submitting a contact request or even signing up to  weekly newsletter.
+The registration and log in pages are clearly marked within the navbar, they are also linked on the home page, and are set as redirections for certain actions on the site if the user is not logged in.
 
 
-b. "As a returning visitor I want to find more information regarding the scottish highlands."
 
-- There is 4 links to sites after the destination section.
+- To be able to view book reviews
 
-- All four links are not only include more information on the Scottish highlands but one includes more information on the poet I used for "Inversnaid"
-
-- The about section contains much information on the scottish highlands and the destinations adds more light to six destinations in the highlands.
-
-c.   "As a returning visitor I want to be taken to a new page when I open a link and not taken off the current page I am on."
-
-- All links on the website take you to a new page.
-
-- All have a target_blank to make sure the user does not loose the current page they are on.
-
-#### Frequent user goals
-a.  "As a frequent user I want to be able to know the correct date and time when on the site and feel confident submitting my details"
-
-- There is date and time buttons throughtout the website especially the index.html to allow the user to view the time while viewing the website.
-
-- There is a remember me option on the signup part incase the user wishes to use it.
-
-- There is a terms and policy attached to add a sense of security for the user when submitting their details.
+All viewers can view the book reviews regardless of having a account or not.
 
 
-b.  "As a frequent user I want to be left with more knowledge on the subject at hand then before I visited."
+- Have the ability to add their own reviews and keep a record of them.
 
-- The whole page is dedicated to the Scottish highlands and this is shown to the user from the opening of the site.
+Once a user has registered an account, they will easily be able to add their own book reviews. The add book review link is in the navbar so is accessible from any page in the site.
 
-- There is about section dedicated to just the information regarding the Highlands and if the user feels he needs more I have included links to four more sites inlcuding more information.
 
-- I have included a poem by Gerard Manley Hopkins to highlight its beauty and appeal.
+- To be able to edit and delete reviews posted.
 
-c. "As a frequent user I want to be able to be able to know my submission or request has been received.
+Once a book review has been submitted, the user who created the review will be able to edit and delete the review easily. There are buttons that link the user to these pages from the book review itself only if they have a account and they added the book review.
 
-- Upon entering the details in the contact form a thanks you page will pop up once submitted.
 
-- The contact and sign up form both have required attributes to make sure the maker receives all the necessary information to reply.
+- For the review information to be clear and concise.
 
-- The sign up form also has a thank you redirect page to let the user know their details have been submitted.
+The review information is laid out clearly and users are shown very quickly what the site is about.
 
+
+- To  be able to securely log out of the site.
+
+There is a clear Log Out header which appears in the navbar for users who are logged in .
+
+
+
+- Find links to other sites and ares to purchase books.
+
+Under the book reviews on the base page there is links to other sites.
+
+
+- To be provided with contact information and social links.
+
+There is a contact form under the "Contact Us" link in the navbar.
+We have also added a email in the footer if a user would like to contact that way.
+
+
+- To store date securely 
+
+The admin and user are both able to store their data which is sent to a mongo datebase, the passwords are salted to add more security and stop brute forcing.
 
 ## Bugs and problems
 
 - After using the Google dev tools to help correct any mistakes in my code I  came across a error of "Failed to load resource: the server responded with a status of 404 (Not Found)" so i added a "link rel="shortcut icon" href="#" into the head of my html pages.
 
-
-
-- When opening the the console log on my contact and signup html pages I noticed a error stating "Uncaught TypeError: Cannot read property of undefined" this was happening as my JS was looking for the id of "ems" on these pages so I added it to the headers on the page.
-
-
-
-- There was a problem with my Gallery as the images would not remain visible after a short period of time, To fix this I added a "animation fill mode: forwards"
-
-
-- I also added my js files into two different files as the code would not work when in the same directory.
+- materialize was not allowing my side nav components to be clicked on 
 
 
 ## Deployment
@@ -369,13 +245,56 @@ To deploy my Project to Github do it following these steps
 
 4. Click save and locate the link under the same section and click into the site.
 
+## Heroku
+This project is deployed using Heroku. I done it in the following way 
+
+- Within GitPod, create the .gitignore and env.py files.
+
+- In the .gitignore file, set it to ignore the env.py file and pycache/ directory.
+
+- Within the env.py file, set the following environmental variable:
+
+- os.environ.setdefault(“IP”, “0.0.0.0”)
+- os.environ.setdefault(“PORT”, “5000”)
+- os.environ.setdefault(“SECRET_KEY”, “YOUR_SECRET_KEY”)
+- os.environ.setdefault(“MONGO_URI”, “mongo db link to go here”)
+- os.environ.setdefault(“MONGO_DBNAME”, “YOUR_DATABASE_NAME”)
+
+- Make sure that the env.py file has been saved correctly and open the app.py file.
+
+- Import OS, Flask and the env.py file.
+
+- Create a requirements.txt file by typing in the terminal; pip3 freeze –local > requirements.txt.
+
+- For Heroku, you will also need a Procfile. Create this by using the terminal and typing; echo web: python app.py > Procfile. 
+
+- Access the Procfile and delete the bottom empty line to avoid any issues in the future.
+
+- Go to the Heroku site, and log in or create a profile. From the dashboard, select “New App”.
+
+-  Create a name for your app, select the correct region and click “Create App”.
+
+- Navigate over to the “Deploy” tab and go to the “Deployment method” section. Click on GitHub.
+
+- Search for your repository name, and click “Connect” next to your repository name.
+
+- Next, go to the “Settings” tab, and scroll down to “Config Vars”. Click “Reveal config vars”.
+
+- Enter the Key and Value pairs as per your env.py file;
+IP : 0.0.0.0
+PORT : 5000
+SECRET_KEY : YOUR_SECRET_KEY
+MONGO_URI : “mongo db link to go here”
+MONGO_DBNAME : “your database name”
+
+- Finally, go back to the “Deploy” tab, and scroll down to “Automatic deploys”. Click on “Enable Automatic Deploys” then “Deploy Branch”.
+The app will now be built and upon completion, you will receive a message saying “Your app was successfully deployed”.
+
+- You can now click on “Open App” which will launch the deployed app.
+
 ## Changes made after deployment
 
-- All my file paths had to be changed my background image and all my nav-bar file paths on my signup and contact html pages.
-
-- It had to be changed by taking a / from infront of it to allow a different file path for Github pages to work deploying my site.
-
-- I had to change my navbars on the contact and signup page from a #About to a "index.html#About" This was done on all the navbar options on the signup and contact html pages. From then all of the site worked the way it was supposed to and on all different viewports.
+Site was deployed early from heroku before starting acctual code.
 
 
 ## Run code locally
@@ -401,17 +320,23 @@ Log in to GitHub and locate the GitHub Repository
 
 First I would like to thank my mentor Samantha for all the help and then the Code Institute! I have added links to all the relevant sites I adapted code from or used to aid in me the making of this site.
 
- ## BOOTSTRAP
 
-https://getbootstrap.com/docs/5.0/getting-started/introduction/
 
--Used for the shadow of elements my nav-bar and boiler plate and columns.
+## Materialize
+
+https://materializecss.com/navbar.html
+
+- used for navbar and footer also uses there styles for my blue colour uses throughout
+## Code institute 
+
+- adapted and project inspired from mini project "putting it all together"
 
 ## W3C SCHOOLS
 
 https://www.w3schools.com/default.asp
 
-- used for inspiration on many aspects, adapted contact form from there site and signup form.
+- used for inspiration on many aspects, adapted contact form from there site 
+
 ## JSHINT
 
 https://jshint.com/
@@ -426,23 +351,20 @@ https://jigsaw.w3.org/css-validator/
 
 ## JQuery
 
+- Used for materialize code.
+
 ## Google fonts
 
-https://fonts.google.com/specimen/Lato#glyphs
+https://fonts.google.com/specimen/Be+Vietnam+Pro
 
-- Used for my Roboto and Lato fonts.
+- Used for my Be Vietnam font.
 
-## GOOGLE IMAGES
+## Google images 
 
-https://www.google.com/search?q=image+scottish+highlands+free&rlz=1C1VDKB_enIE944IE944&tbm=isch&source=iu&ictx=1&fir=g30rp5vOLgkcHM%252CuH7jS_yEYCnGmM%252C_&vet=1&usg=AI4_-kQaux9s
+https://www.google.com/search?q=red+armchair+library+fireplace+photo&tbm=isch&bih=722&biw=1536&rlz=1C1VDKB_enIE944IE944&hl=en&sa=X&ved=2ahUKEwignca4ioTzAhU-SBUIHb5UDBwQBXoECAEQMA#imgrc=rElmGpzLGWNO-M
 
-- Used for my images in this site mainly for the Gallery.
+- For background photo
 
-## Pixabay
-
-https://pixabay.com/images/search/the%20scottish%20highlands/
-
-- Used for my images in this site mainky for the Gallery.
 
 ## FONT AWESOME
 
@@ -454,7 +376,7 @@ https://fontawesome.com/v5.15/icons?d=gallery&p=2
 
 https://en.wikipedia.org/wiki/Main_Page
 
-- Used for information on my six destinations all info copied and adapted from wikipedia.
+- Used for info on books
 
 ## HTML validator 
  
@@ -471,6 +393,11 @@ https://jigsaw.w3.org/css-validator/validator
 
 - Used to correct code
 
+## Am I responsive
+
+http://ami.responsivedesign.is/#
+
+- used for mock up
 
 
 
