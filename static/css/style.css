@@ -1,9 +1,13 @@
+/* font awesome Be Vietnam Pro */
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500&display=swap');
+
 /* main styles */
 
 body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+    font-family: 'Be Vietnam Pro', sans-serif;
     /* background-image: url("/static/images/121aw.jpg"); */
   }
 
@@ -13,10 +17,7 @@ body {
   .parallax {
     /* The image used */
     background-image: url("/static/images/fireplace.jpg");
-  
-    /* Set a specific height */
     min-height: 500px;
-  
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
@@ -41,9 +42,6 @@ body {
       color: #0381c0;;
   }
 
-
-
-
   /* edit and done button styles */
 
 .btn-small{
@@ -54,8 +52,6 @@ body {
     margin: 5px;
     line-height: 42px;
 }
-
-
 
 
 .links{
@@ -106,14 +102,19 @@ body{
 
 
 
-
-
 /* cards  */
 #cards{
     display: inline-block;
     margin: 17px;
     padding: 17px;
 }
+
+ .card-small{
+  background-color: #7bc1fa;
+}
+ .card-reveal{
+   background-color: #7bc1fa;
+ }
 
 
 
@@ -155,6 +156,14 @@ input[type=text], select, textarea{
     padding: 20px;
   }
 
+  .container2{
+    background-color: #0381c0;
+  }
+
+  .card-content{
+    background-color: #0381c0;
+  }
+
    #contact1{
        font-size: 25px;
        color: #7bc1fa;
@@ -163,11 +172,11 @@ input[type=text], select, textarea{
   
   
   /* Clear floats after the columns */
-  .row:after {
+  /* .row:after {
     content: "";
     display: table;
     clear: both;
-  }
+  } */
   
   /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 600px) {

@@ -252,3 +252,66 @@ python3 -m http.server
   <div class="container">
     <!-- <img class="activator" src="{{ book.image_url }}" alt="Book Cover Image"> -->
   </div>
+
+
+
+
+
+
+   <h3 class="light-blue-text text-darken-4 center-align">Manage Book Reviews</h3>
+
+    <div class="row">
+        {% for book in books %}
+            <div class="col s12 m3">
+                <div class="card light-blue darken-4 text-shadow center-align">
+                    <div class="card-content white-text">
+                        <span class="card-title">{{ book.book_name }}</span>
+                    </div>
+                    <div class="card-action">
+                        <a href="#" class="btn green accent-4">Edit</a>
+                        <a href="#" class="btn light-blue lighten-1">Delete</a>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+
+
+
+
+<h4 class="entry" id="entry1"> All Book Reviews</h4>
+{% for book in books %}
+                
+<div class="card medium">
+  <div class="container">
+  </div>
+  <div class="card-content">
+    <span class="card-title activator grey-text text-darken-4"><strong>{{ book.book_name }} {{ book_description }}<i class="material-icons right"></i></strong></span>
+        <div class="col s3">
+          {% if session.user|lower == book.created_by|lower %}
+              <a href="{{ url_for('delete_books', book_id=book._id) }}" class="btn-small green accent-4">Delete review</a>
+              <a href="{{ url_for('edit_books', book_id=book._id) }}" class="btn-small light-blue lighten-1">Edit</a>
+          {% endif %}
+        </div>
+    <p><a href="#">This is a link</a></p>
+  </div>
+  <div class="card-reveal col s9">
+    <span class="card-title grey-text text-darken-4">{{ book.book_name }}<i class="material-icons right">close</i></span>
+    <p>
+      <em>
+        {{ book.book_description }}
+      </em>
+    </p>
+    <p>
+      <em>
+        {{ book.book_rating }}
+      </em>
+    </p>
+    
+    <p>
+      <em>
+        by : {{ book.created_by }}
+      </em>
+    </p>
+  </div>
+</div>

@@ -26,6 +26,12 @@ def get_books():
     return render_template("books.html", books=books)
 
 
+@app.route("/search", methods=["GET", "POST"])
+def search():
+    query = request.form.get("query")
+    books = list(mongo.db.books.find({"$text": {"$search": query}}))
+    return render_template("books.html", books=books)
+
 # register
 
 @app.route("/register", methods=["GET", "POST"])
@@ -137,6 +143,32 @@ def edit_books(book_id):
 
     book = mongo.db.books.find_one({"_id": ObjectId(book_id)})
     return render_template("edit_books.html", book=book,)
+
+
+@app.route("/delete_books/<book_id>")
+def delete_books(book_id):
+    mongo.db.books.remove({"_id": ObjectId(book_id)})
+    flash("Book Review Deleted")
+    return redirect(url_for("get_books"))
+
+
+@app.route("/get_bookreviews")
+def get_bookreviews():
+    bookreviews = list(mongo.db.books.find().sort("book_name", 1))
+    return render_template("bookreviews.html", bookreviews=bookreviews)
+
+
+@app.route("/add_genre", methods=["GET", "POST"])
+def add_genre():
+    if request.method == "POST":
+        genre = {
+            "genre_name": request.form.get("genre_name")
+        }
+        mongo.db.genre.insert_one(genre)
+        flash("New Genre Added")
+        return redirect(url_for("add_genre"))
+
+    return render_template("add_genre.html")
 
 
 # contact section

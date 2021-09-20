@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h3 class="light-blue-text text-darken-4 center-align">Manage Book Reviews</h3>
+
+<div class="row">
+  <div class="col s12 center-align">
+    <a href="{{ url_for('add_genre') }}" class="btn-large light-blue darken-2 text-shadow">
+      Add Category <i class="fas fa-plus-square right"></i>
+    </a>
+  </div>
+</div>
+
+
+
+  <div class="row">
+    {% for book in bookreviews %}
+     <div class="col s12 m6">
+       <div class="card blue-grey darken-1">
+         <div class="card-content white-text">
+          <span class="card-title"> {{ book.book_name }} </span>
+          <p>
+            <em>
+               {{ book.book_description }}
+            </em>
+          </p>
+          <p>
+            <em>
+                {{ book.book_rating }}
+            </em>
+          </p>
+      
+          <p>
+            <em>
+                by : {{ book.created_by }}
+            </em>
+          </p>
+         </div>
+         <div class="card-action">
+          <a href="#" class="btn green accent-4">Edit</a>
+           <a href="#" class="btn light-blue lighten-1">Delete</a>
+         </div>
+       </div>
+     </div>
+    {% endfor %}
+  </div>
+            
+
+  {% endblock %}
+     
+

@@ -2,46 +2,69 @@
 {%  block content %}
 
 <h4 class="entry" id="entry1"> All Book Reviews</h4>
+
+<div class="row card-panel grey lighten-5">
+  <form action="{{ url_for('search') }}" method="post" class="col s12">
+      <div class="row valign-wrapper center-align">
+          <div class="input-field col s12 m8">
+              <i class="fas fa-search prefix light-blue-text text-darken-4"></i>
+              <input type="text" name="query" id="query" minlength="3" class="validate" required>
+              <label for="query">Search Book Reviews</label>
+          </div>
+          <div class="col s12 m4">
+              <a href="{{ url_for('get_books') }}" class="red btn text-shadow">Reset</a>
+              <button type="submit" class="light-blue darken-1 btn text-shadow">
+                  <i class="fas fa-search left"></i> Search
+              </button>
+          </div>
+      </div>
+  </form>
+</div>
+
+{% if books|length > 0 %}
 {% for book in books %}
-                
-<div class="card medium">
-  <div class="container">
+
+<div class="card small">
+  <div class="container2">
   </div>
   <div class="card-content">
-    <span class="card-title activator grey-text text-darken-4"><strong>{{ book.book_name }} {{ book_description }}<i class="material-icons right"></i></strong></span>
-        <div class="col s3">
-          {% if session.user|lower == book.created_by|lower %}
-              <a href="" class="btn-small green accent-4">Done</a>
-              <a href="{{ url_for('edit_books', book_id=book._id) }}" class="btn-small light-blue lighten-1">Edit</a>
-          {% endif %}
-        </div>
-    <p><a href="#">This is a link</a></p>
+    <span class="card-title activator grey-text text-darken-4"><strong>{{ book.book_name }} {{ book_description }}<i
+          class="material-icons right"></i></strong></span>
+    <div class="col s3">
+      {% if session.user|lower == book.created_by|lower %}
+      <a href="{{ url_for('delete_books', book_id=book._id) }}" class="btn-small green accent-4">Delete review</a>
+      <a href="{{ url_for('edit_books', book_id=book._id) }}" class="btn-small light-blue lighten-1">Edit</a>
+      {% endif %}
+    </div>
+    <!-- <p><a href="#">This is a link</a></p> -->
   </div>
   <div class="card-reveal col s9">
-    <span class="card-title grey-text text-darken-4">{{ book.book_name }}<i class="material-icons right">close</i></span>
+    <span class="card-title grey-text text-darken-4">{{ book.book_name }}<i
+        class="material-icons right">close</i></span>
     <p>
       <em>
-        {{ book.book_description }}
+         {{ book.book_description }}
       </em>
     </p>
     <p>
       <em>
-        {{ book.book_rating }}
+          {{ book.book_rating }}
       </em>
     </p>
-    
+
     <p>
       <em>
-        by : {{ book.created_by }}
+          by : {{ book.created_by }}
       </em>
     </p>
   </div>
 </div>
- 
-  
 
+{% endfor %}
+{% else %}
+<h2 class="red-text text-darken-4 center-align">No Results Found</h2>
+{% endif %}
 
-    {% endfor %}
 
 {% endblock %}
 
