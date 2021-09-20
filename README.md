@@ -10,7 +10,6 @@ This is the Readme for Read & Refer website!
  then styled and added what was needed for tablet and mobile devices.
  It is responsive on all devices, view the website here :  https://flask-read-and-refer-project.herokuapp.com/
 
-
 # User Experience (UX)
 ## User Stories
 ## First Time and Returning Users
@@ -37,16 +36,13 @@ This is the Readme for Read & Refer website!
 - For my typograpghy I used a Google font of Be Vietnam Pro with a fallback of sans serif.
 
 
-
 ### Imagery 
 
-
+- I used the one image of a fireplace and armchair for the background
 
 ### Colour Scheme
 
 - I used a colour scheme involving the materilize blue of "#64b5f6 blue lighten-2" along with white and different variations such as "#7bc1fa" and "#0381c0;" for when a anchor is hovered over.
-
-
 
 
 ## Wireframes
@@ -56,7 +52,6 @@ I will also include screenshots below.
 
 
 ![wireframe](/static/images/20main.jpg.png)
-
 
 ![wireframe](/static/images/iphone.jpg.png)
 
@@ -98,7 +93,7 @@ I will also include screenshots below.
 
 - Possibly add a game in the future to add even more interactivity.
 
-- allow the admin to delete book reviews or modiy them more so.
+- Allow the admin to delete book reviews or modiy them more so.
 
 
 
@@ -119,23 +114,22 @@ I will also include screenshots below.
 
 
 ## To test my code I did it in the following way 
-
 - I ran the code through the  different validators for each of my languages.
 
 i. I would copy sections of code so as not to do a whole page and fix any problems within the section first.
 
 ii. Paste the code into the correct tester.
-
+ 
 iii. Once results and errors (if present) are visble, examine and correct the changes needed.
   
 iv. Repeated the same process for all the languages.
 
 - I would browse through the site on all the different types of view port to ensure it worked well.
-
+  
 i. I would browse through all of the site on the mobile and tablet viewports.
-
+ 
 ii. I check all the links to make sure they worked correctly, I looked at the text content to make sure it came out the way intended.
-
+ 
 iii. I would then make sure that all the correct text is visble and not too small, then I would interact with all the interactive elements to make sure they reacted correctly.
 
 iv.  Open google tools and view any errors present.
@@ -158,23 +152,17 @@ All admin only pages can only be accessed by the admin.
 Redirects are all working as expected, with correct flash messages present.
 
 ## Testing user stories 
-
 - Navigate easy through all devices and have all areas of website responsive.
 
 The site is fully responsive regardless of device used, and the navbar is clear and easy to navigate through on both mobile and desktop/laptop devices.
-
-
 
 - To be able to view/preview the site before creating an account.
 
 Users will have full access to the book reviews created before registering an account they may not edit or delete untill they have a account.
 
-
 - Have clear Registration and Log In pages.
 
 The registration and log in pages are clearly marked within the navbar, they are also linked on the home page, and are set as redirections for certain actions on the site if the user is not logged in.
-
-
 
 - To be able to view book reviews
 
@@ -185,22 +173,17 @@ All viewers can view the book reviews regardless of having a account or not.
 
 Once a user has registered an account, they will easily be able to add their own book reviews. The add book review link is in the navbar so is accessible from any page in the site.
 
-
 - To be able to edit and delete reviews posted.
 
 Once a book review has been submitted, the user who created the review will be able to edit and delete the review easily. There are buttons that link the user to these pages from the book review itself only if they have a account and they added the book review.
-
 
 - For the review information to be clear and concise.
 
 The review information is laid out clearly and users are shown very quickly what the site is about.
 
-
 - To  be able to securely log out of the site.
 
 There is a clear Log Out header which appears in the navbar for users who are logged in .
-
-
 
 - Find links to other sites and ares to purchase books.
 
@@ -223,6 +206,11 @@ The admin and user are both able to store their data which is sent to a mongo da
 
 - materialize was not allowing my side nav components to be clicked on to fix this I had to get rid of the opacity on my background image.
 
+- I had to change a max width for containers to organise the styling of the code a lot more.
+
+- Could not get a max lenght and min lenght on my book rating section so I left it as only a number input but a label for out of ten.
+
+- Found only errors for my jinja templating in all my html.
 
 ## Deployment
 To deploy my Project to Github do it following these steps
@@ -389,5 +377,10 @@ http://ami.responsivedesign.is/#
 
 - Used for mock up
 
+## Python Checker
+
+https://extendsclass.com/python-tester.html
+
+- used to correct python
 
 
