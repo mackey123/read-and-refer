@@ -200,7 +200,7 @@ We have also added a email in the footer if a user would like to contact that wa
 
 The admin and user are both able to store their data which is sent to a mongo datebase, the passwords are salted to add more security and stop brute forcing.
 
-## Bugs and problems
+## Bugs, problems and points to consider 
 
 - After using the Google dev tools to help correct any mistakes in my code I  came across a error of "Failed to load resource: the server responded with a status of 404 (Not Found)" so i added a "link rel="shortcut icon" href="#" into the head of my html pages.
 
@@ -211,6 +211,8 @@ The admin and user are both able to store their data which is sent to a mongo da
 - Could not get a max lenght and min lenght on my book rating section so I left it as only a number input but a label for out of ten.
 
 - Found only errors for my jinja templating in all my html.
+
+- In future I would implement a better card system for the books without the use of materialize.
 
 ## Deployment
 To deploy my Project to Github do it following these steps
